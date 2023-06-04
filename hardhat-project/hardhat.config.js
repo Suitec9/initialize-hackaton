@@ -3,16 +3,16 @@ require("dotenv").config(".env");
 
 module.exports = {
   solidity: "0.8.10",
-  defaultNetwork: "Sepolia",
+  defaultNetwork: "goerli",
   networks: {
-    Sepolia: {
+    goerli: {
       url: process.env.ALCHEMY_API_KEY_URL,
-      accounts: [process.env.SEPOLIA_PRIVATE_KEY],
+      accounts: [process.env.GOERLI_PRIVATE_KEY],
     },
   },
   etherscan: {
     apiKey: {
-      Sepolia: process.env._PRIVATE_KEY,
+      goerli: process.env._PRIVATE_KEY,
     },
   },
 };
@@ -27,11 +27,11 @@ module.exports = {
 
 module.exports = {
   solidity: "0.8.10",
-  defaultNetwork: "Sepolia",
+  defaultNetwork: "goerli",
   networks: {
-    Sepolia: {
+    goerli: {
       url: process.env.ALCHEMY_API_KEY_URL,
-      accounts: [process.env.SEPOLIA_PRIVATE_KEY],
+      accounts: [process.env.GOERLI_PRIVATE_KEY],
     },
   },
 };
